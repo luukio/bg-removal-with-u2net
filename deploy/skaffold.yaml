@@ -8,4 +8,4 @@ build:
 deploy:
   kubectl:
     manifests:
-      - deploy/knative.yaml
+      - deploy/service.yaml

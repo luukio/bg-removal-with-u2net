@@ -45,9 +45,17 @@ def run():
     # Process Image
     res = u2net.run(np.array(img))
 
+    # Convert to BW and make it to the size of original image
+    mask = res.convert('L').resize((img.width, img.height))
+
+    # Making final composite
+    logging.info(' > compositing final image...')
+    empty = Image.new("RGBA", img.size, 0)
+    img = Image.composite(img, empty, mask)
+
     # Save to buffer
     buff = io.BytesIO()
-    res.save(buff, 'PNG')
+    img.save(buff, 'PNG')
     buff.seek(0)
 
     # Print stats
