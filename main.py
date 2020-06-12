@@ -20,7 +20,7 @@ CORS(app)
 # Simple probe.
 @app.route('/', methods=['GET'])
 def hello():
-    return 'Hello U^2-Net!'
+    return 'Hello U^2-Net, get your POST on!'
 
 
 # Route http posts to this method
