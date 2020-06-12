@@ -1,5 +1,7 @@
 # U^2-Net HTTP
 
+*This fork includes a couple small additions to return the actual PNG instead of the mask.*
+
 This is an HTTP service wrapper of the model: [U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection](https://github.com/NathanUA/U-2-Net) (Qin et al, Pattern Recognition 2020)
 
 The deploy folder contains configuration files for deployment as serverless container with Knative.
