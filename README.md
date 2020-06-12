@@ -1,16 +1,12 @@
-# U^2-Net HTTP
+# BG Removal with usenet
 
-*This fork includes a couple small additions to return the actual PNG instead of the mask. The references images inside the deploy folder are the originals from @cyrildiagne.*
+__Forked from [cyrildiagne](https://github.com/cyrildiagne/u2net-http)__
 
-This is an HTTP service wrapper of the model: [U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection](https://github.com/NathanUA/U-2-Net) (Qin et al, Pattern Recognition 2020)
+*Main difference is the output change to the actual PNG instead of the mask. The referenced docker images inside the deploy folder are the originals from cyrildiagne, so please build from source.*
+
+This is an HTTP service wrapper of the model: [U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection](https://github.com/NathanUA/U-2-Net) (Qin et al, Pattern Recognition 2020) 
 
 The deploy folder contains configuration files for deployment as serverless container with Knative.
-
-# Usage:
-
-```bash
-docker run --rm -p 8080:80 docker.io/cyrildiagne/u2net-http
-```
 
 # Test:
 
