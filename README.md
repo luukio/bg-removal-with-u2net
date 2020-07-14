@@ -2,7 +2,7 @@
 
 __Forked from [cyrildiagne](https://github.com/cyrildiagne/u2net-http)__
 
-*Main difference is that it now outputs the actual PNG instead of the mask. The referenced docker images inside the deploy folder are the originals from cyrildiagne, so please build from source.*
+*Main difference is that it now actually removes the background, it outputs the actual PNG instead of the mask.*
 
 This is an HTTP service wrapper of the model: [U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection](https://github.com/NathanUA/U-2-Net) (Qin et al, Pattern Recognition 2020) 
 

@@ -2,7 +2,7 @@ apiVersion: skaffold/v1
 kind: Config
 build:
   artifacts:
-  - image: docker.io/cyrildiagne/u2net-http
+  - image: docker.io/luukio/u2net-bg-removal
     docker:
       dockerfile: ./Dockerfile
 deploy:
