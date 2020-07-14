@@ -14,6 +14,12 @@ The deploy folder contains configuration files for deployment as serverless cont
 curl -F "data=@test.jpg" http://localhost:8080 -o result.png
 ```
 
+# Usage:
+
+```bash
+docker run --rm -p 8080:80 docker.io/luukio/u2net-bg-removal
+```
+
 # Development
 
 - Clone this repository: `git clone https://github.com/ideo/bg-removal-with-usenet`
