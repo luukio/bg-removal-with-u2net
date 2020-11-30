@@ -8,6 +8,8 @@ This is an HTTP service wrapper of the model: [U^2-Net: Going Deeper with Nested
 
 The deploy folder contains configuration files for deployment as serverless container with Knative.
 
+[Docker Hub Link](https://hub.docker.com/repository/docker/luukio/u2net-bg-removal)
+
 # Test:
 
 ```bash
